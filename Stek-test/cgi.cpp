@@ -105,5 +105,6 @@ void get_param_value(char*& value, const char* param_name, const char* data)
 		}
 	}
 	delete[] str;
-	value = nullptr;
+	value = new char[1];
+	value[0] = 0;
 }
